@@ -27,19 +27,6 @@ jobs:
         sudo chown -R $(whoami):$(whoami) /system
         sudo chmod 755 -R /system
     
-    - name: "Start Building (x86_64)"
-      run: |
-        ./build-all.sh x86_64
-        mv logs /data/data/com.micewine.emu/files/usr
-        
-    - name: "Create RootFS File (x86_64)"
-      run: |
-        ./create-rootfs.sh x86_64
-
-    - name: "Clean x86_64 RootFS"
-      run: |
-        sudo rm -rf /data/data/com.micewine.emu/files/usr workdir rootfs
-
     - name: "Start Building (aarch64)"
       run: |
         ./build-all.sh aarch64
@@ -59,4 +46,3 @@ jobs:
         tag_name: ${{ env.SHORT_SHA }}
         files: |
             /home/runner/MiceWine-RootFS-aarch64.zip
-            /home/runner/MiceWine-RootFS-x86_64.zip
