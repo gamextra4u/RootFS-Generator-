@@ -316,7 +316,7 @@ compileAll()
 				exit 0
 			fi
 
-			cp -rf "$INIT_DIR/workdir/$package/destdir-pkg/data/data/com.micewine.emu/"* "/data/data/com.micewine.emu"
+			cp -rf "$INIT_DIR/workdir/$package/destdir-pkg/data/data/com.vectras.winux/"* "/data/data/com.vectras.winux"
 
    			find "$INIT_DIR/workdir/$package/destdir-pkg" > "$INIT_DIR/logs/$package-package-files.txt"
 
@@ -344,7 +344,7 @@ showHelp()
 	echo "	aarch64"
 }
 
-export PREFIX=/data/data/com.micewine.emu/files/usr
+export PREFIX=/data/data/com.vectras.winux/files/usr
 
 if [ -n "$1" ]; then
 	case $1 in "aarch64"|"x86_64")

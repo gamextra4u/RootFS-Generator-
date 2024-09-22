@@ -20,7 +20,7 @@ symlink2sh() {
   done
 }
 
-export PREFIX=/data/data/com.micewine.emu/files/usr
+export PREFIX=/data/data/com.vectras.winux/files/usr
 export INIT_DIR=$PWD
 
 if [ ! -e "$PREFIX" ]; then

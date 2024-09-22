@@ -30,7 +30,7 @@ jobs:
     - name: "Start Building (aarch64)"
       run: |
         ./build-all.sh aarch64
-        mv logs /data/data/com.micewine.emu/files/usr
+        mv logs /data/data/com.vectras.winux/files/usr
 
     - name: "Create RootFS File (aarch64)"
       run: |
