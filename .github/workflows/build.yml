@@ -1,7 +1,8 @@
 name: Build and Release MiceWine RootFS
 
 on:
-  workflow_dispatch:
+   push:
+    branches: "gamextra4u-patch-1"
 
 jobs:
   build:
