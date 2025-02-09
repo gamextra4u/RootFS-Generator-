@@ -2,7 +2,6 @@ PKG_VER="10.0-esync"
 PKG_CATEGORY="Wine"
 PKG_PRETTY_NAME="Wine ($PKG_VER)"
 
-BLACKLIST_ARCHITECTURE=x86_64
 
 GIT_URL=https://github.com/KreitinnSoftware/wine
 GIT_COMMIT=f055b615d87c987bdb156fd6d29b4eff00cd8d85
